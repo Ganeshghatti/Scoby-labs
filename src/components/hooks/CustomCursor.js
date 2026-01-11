@@ -1,3 +1,5 @@
+
+"use client"
 const { useRef, useEffect } = require("react");
 
 export const CustomCursor= () => {
