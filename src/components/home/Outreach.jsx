@@ -1,3 +1,5 @@
+"use client"
+
 import { useIntersectionObserver } from "../hooks/useIntersection";
 
 const Outreach = () => {

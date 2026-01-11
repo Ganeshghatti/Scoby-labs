@@ -1,3 +1,4 @@
+"use client"
 import { useIntersectionObserver } from "../hooks/useIntersection";
 
 const { FlaskConical, ChefHat, Users, Microscope } = require("lucide-react");

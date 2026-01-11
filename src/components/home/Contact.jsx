@@ -1,3 +1,4 @@
+"use client"
 import { useIntersectionObserver } from "../hooks/useIntersection";
 import { useMagnetic } from "../hooks/useMagnetic";
 
