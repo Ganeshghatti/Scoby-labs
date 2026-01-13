@@ -15,7 +15,7 @@ const Navbar = () => {
           <Image src="/scopy.png" alt="SCOBY LABS" width={50} height={50} className="h-16 w-16 md:h-24 md:w-24 rounded-full border border-lab-text/10" />
         </a>
         <div className="hidden md:flex space-x-12 font-sans text-xs tracking-[0.2em] uppercase text-lab-text">
-          {['about', 'cultures', 'projects', 'methodology', 'contact'].map(item => (
+          {['about', 'Team', 'products', 'Collaboration', 'contact'].map(item => (
             <a key={item} href={`#${item}`} className="hover:text-lab-gold transition-colors hover-trigger">
               {item}
             </a>

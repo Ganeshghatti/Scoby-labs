@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import { useIntersectionObserver } from "../hooks/useIntersection";
 
 const About = () => {
@@ -12,15 +13,17 @@ const About = () => {
       className="min-h-screen flex items-center justify-center py-12 md:py-20 px-6 relative bg-[#E6E0D4]/30 overflow-hidden"
     >
       <div
-        className={`grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-6xl w-full items-center transition-all duration-1000 ${
+        className={`grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-7xl w-full items-center transition-all duration-1000 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
         <div className="order-2 md:order-1 relative">
           <div className="aspect-square overflow-hidden bg-lab-accent relative group dish-card">
-            <img
-              src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&q=80&w=1000"
+            <Image
+              src="/IMG-20250613-WA0022.jpg"
               alt="Microscope View"
+              width={200}
+              height={200}
               className="object-cover w-full h-full dish-img opacity-90"
             />
             <div className="absolute inset-0 border border-lab-text/10 pointer-events-none z-10" />
@@ -62,7 +65,7 @@ const About = () => {
             , the work grew into a deep dive into fermentation, flavour
             chemistry, and nine months of kombucha R&D. A café opened space for
             our products, and soon, the project expanded into workshops and
-            science-based learning experiences. Whether you're sipping on a
+            science-based learning experiences. Whether you&apos;re sipping on a
             handcrafted beverage or joining us for a fermentation masterclass,
             you’re stepping into a lab that believes:
           </p>

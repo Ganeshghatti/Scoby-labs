@@ -1,32 +1,34 @@
 "use client"
+import Image from "next/image";
 import { useIntersectionObserver } from "../hooks/useIntersection";
 
 const { FlaskConical, ChefHat, Users, Microscope } = require("lucide-react");
 
 const Classroom = () => {
   const { elementRef, isVisible } = useIntersectionObserver({ threshold: 0.1 });
-  const perks = [
-    {
-      icon: <Microscope />,
-      title: "Vision",
-      desc: "To lead in sustainable food innovation, make nutritious and gut-friendly products accessible, and create meaningful work for communities often left out. ",
-    },
-    {
-      icon: <FlaskConical />,
-      title: "Chemistry",
-      desc: "PH levels, enzymatic reactions.",
-    },
-    {
-      icon: <ChefHat />,
-      title: "Mission",
-      desc: "To shape a business that serves everyone — uplifting communities now while safeguarding the world for tomorrow.",
-    },
-    {
-      icon: <Users />,
-      title: "Community",
-      desc: "Inclusive learning environment.",
-    },
-  ];
+const perks = [
+  {
+    type: "text",
+    icon: <Microscope />,
+    title: "Vision",
+    desc: "To lead in sustainable food innovation, make nutritious and gut-friendly products accessible, and create meaningful work for communities often left out.",
+  },
+  {
+    type: "image",
+    link: "/IMG_20240522_021601_091.jpg",
+  },
+  {
+    type: "text",
+    icon: <ChefHat />,
+    title: "Mission",
+    desc: "To shape a business that serves everyone — uplifting communities now while safeguarding the world for tomorrow.",
+  },
+  {
+    type: "image",
+    link: "/IMG_20240824_231000_333.jpg",
+  },
+];
+
 
   return (
     <section className="py-12 md:py-24 px-6 bg-[#3E2F22] text-lab-bg relative overflow-hidden">
@@ -41,7 +43,6 @@ const Classroom = () => {
           <span className="font-sans text-lg md:text-2xl   tracking-[0.3em] text-lab-gold uppercase">
             FOUNDER’S MESSAGE{" "}
           </span>
-          {/* <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white mt-6 mb-8 leading-tight"> <br/><span className="italic text-lab-gold">CLASSROOM</span></h2> */}
           <p className="font-sans text-[#FDFBF7]/70 leading-loose mb-4 mt-2">
             Those who eat well can also feed well. I’ve always believed food
             should be top-notch — flavour matters. And flavours can be elevated
@@ -84,21 +85,43 @@ const Classroom = () => {
             Connects With us
           </a>
         </div>
+<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch">
+  {perks.map((p, idx) => (
+    <div
+      key={idx}
+      className={`relative bg-[#FDFBF7]/5 p-6 md:p-8 backdrop-blur-sm border border-white/5 
+      hover:border-lab-gold/30 transition-all duration-300
+      ${idx % 2 !== 0 ? "sm:mt-8" : ""}`}
+    >
+      {p.type === "text" && (
+        <>
+          <div className="text-[#BFA15F] mb-4 text-3xl">
+            {p.icon}
+          </div>
+          <h4 className="font-serif text-white text-xl mb-2">
+            {p.title}
+          </h4>
+          <p className="text-sm font-sans text-[#FDFBF7]/60 leading-relaxed">
+            {p.desc}
+          </p>
+        </>
+      )}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {perks.map((p, idx) => (
-            <div
-              key={idx}
-              className={`bg-[#FDFBF7]/5 p-6 md:p-8 backdrop-blur-sm border border-white/5 hover:border-lab-gold/30 transition-colors ${
-                idx % 2 !== 0 ? "mt-0 sm:mt-8" : ""
-              }`}
-            >
-              <div className="text-[#BFA15F] mb-4">{p.icon}</div>
-              <h4 className="font-serif text-white text-xl mb-2">{p.title}</h4>
-              <p className="text-xs font-sans text-[#FDFBF7]/50">{p.desc}</p>
-            </div>
-          ))}
+      {p.type === "image" && (
+        <div className="relative w-full aspect-[4/3] overflow-hidden rounded-md">
+          <Image
+            src={p.link}
+            alt="Scoby Labs"
+            fill
+            className="object-cover hover:scale-105 transition-transform duration-500"
+            sizes="(max-width: 640px) 100vw, 50vw"
+          />
         </div>
+      )}
+    </div>
+  ))}
+</div>
+
       </div>
     </section>
   );

@@ -26,7 +26,7 @@ const TeamSection = () => {
   ];
 
   return (
-    <section id="cultures" ref={elementRef} className="py-12 md:py-24 px-6 bg-lab-bg relative overflow-hidden">
+    <section id="Team" ref={elementRef} className="py-12 md:py-24 px-6 bg-lab-bg relative overflow-hidden">
       <div className={`max-w-7xl mx-auto relative z-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="text-center mb-12 md:mb-20">
           <span className="font-sans text-xs tracking-[0.3em] text-lab-gold uppercase">Specimen Collection</span>

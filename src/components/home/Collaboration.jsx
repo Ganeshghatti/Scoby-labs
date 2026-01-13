@@ -38,7 +38,7 @@ const Collaboration = () => {
 
   return (
     <section
-      id="methodology"
+      id="Collaboration"
       ref={elementRef}
       className="py-12 md:py-24 px-6 bg-lab-bg relative"
     >
