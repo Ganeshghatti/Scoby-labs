@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import { useIntersectionObserver } from "../hooks/useIntersection";
@@ -20,7 +20,7 @@ const About = () => {
         <div className="order-2 md:order-1 relative">
           <div className="aspect-square overflow-hidden bg-lab-accent relative group dish-card">
             <Image
-              src="/IMG-20250613-WA0022.jpg"
+              src="/IMG_20240204_232855_259.jpg"
               alt="Microscope View"
               width={200}
               height={200}
@@ -36,11 +36,12 @@ const About = () => {
           </div>
         </div>
 
-        <div className="order-1 md:order-2 space-y-5 text-lab-text">
-          <h2 className="font-serif flex text-4xl md:text-6xl">
-            <span className="block px-2">OUR</span>
-            <span className="block italic text-lab-gold">Story</span>
+        <div className="order-1 md:order-2 space-y-5 text-center md:text-left text-lab-text">
+          <h2 className="font-serif flex justify-center md:justify-start text-4xl md:text-6xl text-center md:text-left">
+            <span className="px-2">OUR</span>
+            <span className="italic text-lab-gold">Story</span>
           </h2>
+
           <div className="w-12 h-[1px] " />
           <p className="font-sans   text-[#3E2F22]/80 leading-loose">
             <span className="bg-yellow-200 text-black p-1">

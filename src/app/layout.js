@@ -1,6 +1,6 @@
 
 import "./globals.css";
-import { Cormorant_Garamond, Montserrat } from 'next/font/google';
+import { Cormorant_Garamond, Inclusive_Sans, Montserrat } from 'next/font/google';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -22,6 +22,9 @@ const cormorant = Cormorant_Garamond({
 export const metadata= {
   title: "SCOBY LABS | Fermentation Science",
   description: "Reestablishing that cooking is the Chemistry of Flavours and Aromas. A wonderland of microbes driving metabolism.",
+  icons : {
+    icon : "/logo.jpg"
+  }
 };
 
 

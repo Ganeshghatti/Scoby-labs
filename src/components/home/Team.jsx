@@ -1,7 +1,9 @@
 "use client"
+import Image from "next/image";
 import { useIntersectionObserver } from "../hooks/useIntersection";
-
-
+import image1 from "../../../public/IMG-20240622-WA0004.jpg"
+import image2 from '../../../public/IMG-20250613-WA0022.jpg'
+import image3 from "../../../public/IMG_20240204_232855_346.jpg"
 const TeamSection = () => {
   const { elementRef, isVisible } = useIntersectionObserver({ threshold: 0.1 });
   const specimens = [
@@ -45,24 +47,38 @@ and growing together.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-          {specimens.map((s, idx) => (
-            <div key={idx} className="flex flex-col items-center group hover-trigger">
-              <div className="w-48 h-48 md:w-64 md:h-64 rounded-full bg-lab-accent/50 relative mb-6 md:mb-8 petri-dish overflow-hidden border border-lab-text/10 shadow-inner flex items-center justify-center">
-                <div 
-                  className="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-multiply transition-transform duration-700 group-hover:scale-110" 
-                  style={{ backgroundImage: `url(${s.img})` }} 
-                />
-                <div className={`w-24 h-24 md:w-32 md:h-32 rounded-full blur-xl animate-float ${idx % 2 === 0 ? 'bg-lab-gold/20' : 'bg-white/30'}`} />
-              </div>
-              <h3 className="font-serif text-2xl text-lab-text">{s.name}</h3>
-              <p className="font-sans text-xs text-lab-text/50 mt-2 tracking-widest uppercase">{s.subtitle}</p>
-              <p className="text-center text-sm text-lab-text/70 mt-4 max-w-xs leading-relaxed opacity-100 md:opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-0 md:translate-y-2 group-hover:translate-y-0">
-                {s.desc}
-              </p>
-            </div>
-          ))}
-        </div>
+       <div
+      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-5 px-10 py-6 w-full bg-[#F5F5F5]"
+      id="gallery"
+    >
+      <div className="relative aspect-square w-full overflow-hidden  shadow-md">
+        <Image
+          src={image1}
+          alt="Social Hardware robotics lab workspace"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+
+      <div className="relative aspect-square w-full overflow-hidden shadow-md">
+        <Image
+          src={image2}
+          alt="Collaborative robot in action"
+          fill
+          className="object-cover"
+        />
+      </div>
+
+      <div className="relative aspect-square w-full overflow-hidden  shadow-md">
+        <Image
+          src={image3}
+          alt="Robotic automation system"
+          fill
+          className="object-cover"
+        />
+      </div>
+    </div>
       </div>
     </section>
   );

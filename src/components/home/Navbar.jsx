@@ -12,7 +12,7 @@ const Navbar = () => {
     <>
       <nav className="fixed top-0 w-full z-50 px-6 py-6 flex justify-between items-center bg-lab-bg/80 backdrop-blur-sm transition-all duration-300">
         <a href="#" className="hover-trigger">
-          <Image src="/scopy.png" alt="SCOBY LABS" width={50} height={50} className="h-16 w-16 md:h-24 md:w-24 rounded-full border border-lab-text/10" />
+          <Image src="/logo.jpg" alt="SCOBY LABS" width={50} height={50} className="h-16 w-16 md:h-24 md:w-24 rounded-full border border-lab-text/10" />
         </a>
         <div className="hidden md:flex space-x-12 font-sans text-xs tracking-[0.2em] uppercase text-lab-text">
           {['about', 'Team', 'products', 'Collaboration', 'contact'].map(item => (
@@ -30,7 +30,7 @@ const Navbar = () => {
         <button onClick={() => setIsOpen(false)} className="absolute top-6 right-6 text-lab-text hover-trigger">
           <X size={24} />
         </button>
-        {['about', 'cultures', 'projects', 'methodology', 'contact'].map(item => (
+        {['about', 'Team', 'products', 'Collaboration', 'contact'].map(item => (
           <a key={item} href={`#${item}`} onClick={() => setIsOpen(false)} className="font-serif text-3xl text-lab-text hover:text-lab-gold transition-colors">
             {item.charAt(0).toUpperCase() + item.slice(1)}
           </a>

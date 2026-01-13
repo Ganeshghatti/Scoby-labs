@@ -65,7 +65,6 @@ const Hero = () => {
           loaded ? "visible" : ""
         } hidden md:block`}
       >
-        <div className="w-[1px] h-16 bg-gradient-to-b from-transparent via-[#3E2F22]/50 to-transparent animate-pulse"></div>
       </div>
     </header>
   );

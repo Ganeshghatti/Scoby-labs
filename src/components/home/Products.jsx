@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useIntersectionObserver } from "../hooks/useIntersection";
+import Link from "next/link";
 
 const Products = () => {
   const { elementRef, isVisible } = useIntersectionObserver({ threshold: 0.1 });
@@ -28,7 +29,7 @@ const Products = () => {
     {
       title: "SAUERKRAUT ",
       sub: "Sauerkraut is a fermented cabbage preparation developed as a method of long-term preservation.Through natural lactic fermentation, cabbage transforms into a probiotic-rich, acidic ferment.This process enhances nutrient availability beyond that of raw cabbage.Sauerkraut contains beneficial bacteria that support gut health and digestion.Historically adopted across cultures, it reflects fermentation as both necessity and craft.A simple, structured ferment shaped by time, salt, and microbial activity. ",
-      tag: "/Screenshot 2026-01-13 145150.png",
+      tag: "/Screenshot 2026-01-13 181945.png",
     },
     {
       title: "BEET KVASS",
@@ -91,7 +92,7 @@ const Products = () => {
                  cursor-pointer
                  hover:border-[#BFA15F]/50"
             >
-              <div className="mb-2 md:mb-0 flex">
+              <div className="mb-2 md:mb-0 flex flex-col md:flex-row">
                 <div>
                   <h3
                     className="font-serif text-2xl md:text-3xl 
@@ -107,11 +108,17 @@ const Products = () => {
                   >
                     {item.sub}
                   </p>
+
+                  <a href="https://wa.me/c/919113574563" >
+                  <button className="bg-[#BFA15F] p-2 mt-4 text-white rounded-md">
+                    Check details
+                    </button>
+                  </a>
                 </div>
                 <div
                   className="
     ml-6
-    w-[120px] sm:w-[150px] md:w-[280px]
+    w-[300px] mt-3 md:mt-0 sm:w-[150px] md:w-[280px]
     flex-shrink-0
     transition-transform duration-300
     group-hover:scale-105
