@@ -28,23 +28,23 @@ const About = () => {
             />
             <div className="absolute inset-0 border border-lab-text/10 pointer-events-none z-10" />
           </div>
-          <div
+          {/* <div
             className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 font-serif text-6xl md:text-8xl text-transparent opacity-10 pointer-events-none"
             style={{ WebkitTextStroke: "1px #3E2F22" }}
           >
             01
-          </div>
+          </div> */}
         </div>
 
-        <div className="order-1 md:order-2 space-y-5 text-center md:text-left text-lab-text">
-          <h2 className="font-serif flex justify-center md:justify-start text-4xl md:text-6xl text-center md:text-left">
+        <div className="order-1 md:order-2 space-y-2 md:space-y-4 text-left text-lab-text">
+          <h2 className="font-serif flex justify-start text-4xl md:text-6xl text-center md:text-left">
             <span className="px-2">OUR</span>
             <span className="italic text-lab-gold">Story</span>
           </h2>
 
           <div className="w-12 h-[1px] " />
           <p className="font-sans   text-[#3E2F22]/80 leading-loose">
-            <span className="bg-yellow-200 text-black p-1">
+            <span className="italic text-black">
               Scoby Labs began in 2022{" "}
             </span>{" "}
             with a very pertinent question that became impossible to ignore
@@ -60,7 +60,7 @@ const About = () => {
             crowds. People connected with the flavours, the story, and the
             science. Orders came in, and the journey began. From delivering
             bottles across the city to{" "}
-            <span className="bg-red-200 text-black p-1">
+            <span className="italic text-black">
               experimenting with over 19 flavours
             </span>
             , the work grew into a deep dive into fermentation, flavour
@@ -70,7 +70,7 @@ const About = () => {
             handcrafted beverage or joining us for a fermentation masterclass,
             you’re stepping into a lab that believes:
           </p>
-          <ul className="font-sans text-xs tracking-widest space-y-4 text-lab-text/70 mt-6">
+          <ul className="font-sans tracking-widest space-y-1 text-lab-text/70 mt-4">
             <li className="flex items-center space-x-4">
               <span className="w-1 h-1 bg-lab-gold rounded-full" />
               <span>Cooking is science </span>

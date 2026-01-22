@@ -14,7 +14,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" ref={elementRef} className="min-h-screen flex items-center justify-center py-12 md:py-20 px-6 relative bg-[#E6E0D4]/20">
+    <section id="contact" ref={elementRef} className="min-h-screen flex items-center justify-center py-8 md:py-8 px-6 relative bg-[#E6E0D4]/20">
       <div className={`max-w-xl w-full relative z-10 bg-[#FDFBF7]/90 backdrop-blur-md p-6 md:p-12 border border-[#3E2F22]/5 shadow-xl transition-all duration-1000 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
         <div className="text-center mb-8 md:mb-10">
           <span className="font-sans text-xs tracking-[0.3em] text-[#BFA15F] uppercase">Bengaluru South, Karnataka</span>

@@ -30,7 +30,7 @@ const Classroom = () => {
   ];
 
   return (
-    <section className="py-12 md:py-24 px-6 bg-[#3E2F22] text-lab-bg relative overflow-hidden">
+    <section className="py-12 md:py-20 px-6 bg-[#3E2F22] text-lab-bg relative overflow-hidden">
       <div
         ref={elementRef}
         className={`max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center  transition-all duration-1000 ${
@@ -38,10 +38,10 @@ const Classroom = () => {
         }`}
       >
         <div className="mt-2">
-          <h2 className="font-sans text-center md:text-left  text-xl md:text-3xl   tracking-[0.3em] text-lab-gold uppercase">
+          <h2 className="font-sans text-left  text-xl md:text-3xl   tracking-[0.2em] text-lab-gold uppercase">
             FOUNDER’S MESSAGE{" "}
           </h2>
-          <p className="font-sans text-[#FDFBF7]/70 text-center md:text-left leading-loose mb-4 mt-2">
+          <p className="font-sans text-[#FDFBF7]/70 text-left leading-loose mb-4 mt-2">
             Those who eat well can also feed well. I’ve always believed food
             should be top-notch flavour matters. And flavours can be elevated
             through culinary techniques backed by science, especially the kind
@@ -51,7 +51,7 @@ const Classroom = () => {
             scientific curiosity I had as a child seemed to find its answers
             there.{" "}
           </p>
-          <p className="font-sans text-[#FDFBF7]/70 text-center md:text-left leading-loose mb-2">
+          <p className="font-sans text-[#FDFBF7]/70 text-left leading-loose mb-2">
             As an educator, I wanted to pass on that same curiosity to my
             students, and that is how Scoby Labs came to life to take this
             intersection of food and science out into the world. We aspire to
@@ -60,17 +60,17 @@ const Classroom = () => {
             is welcome because food doesn’t discriminate, and neither do we.
             Food is our medium for inclusivity, which is why the first question
             that we ask any customer is very simple that is{" "}
-            <span className="text-black bg-yellow-200 p-1">
+            <span className="italic text-white ">
               “What do you like?”
             </span>
           </p>
 
-          <p className="font-sans text-[#FDFBF7]/70 text-center md:text-left leading-loose mb-6">
+          <p className="font-sans text-[#FDFBF7]/70 text-left leading-loose mb-6">
             Scoby Labs was born from inquisitiveness and research, and it will
             always stay rooted in inclusivity, transparency, and openness. Our
             doors will remain open to everyone, at all times. Our fundamental
             pillars are clear{" "}
-            <span className="bg-red-200 p-1 text-black">
+            <span className="italic text-white">
               science, research, inclusion, and a genuine love for food.{" "}
             </span>
             If food is culture, then fermentation is conversation and we’re
@@ -104,13 +104,13 @@ const Classroom = () => {
               )}
 
               {p.type === "image" && (
-                <div className="relative w-full aspect-[4/3] overflow-hidden rounded-md">
+                <div className="relative w-full aspect-[1] overflow-hidden rounded-md">
                   <Image
                     src={p.link}
                     alt="Scoby Labs"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 640px) 100vw, 50vw"
+                    sizes="(max-width: 600px) 100vw, 50vw"
                   />
                 </div>
               )}

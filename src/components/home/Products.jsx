@@ -62,18 +62,18 @@ const Products = () => {
     <section
       id="products"
       ref={elementRef}
-      className="py-12 md:py-24 px-6 bg-[#E6E0D4]/20"
+      className="py-12 md:py-16 px-6 bg-[#E6E0D4]/20"
     >
       <div
         className={`max-w-7xl mx-auto transition-all duration-1000 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        <div className="text-center mb-12 md:mb-16">
-          <span className="font-sans text-xs tracking-[0.3em] text-lab-gold uppercase">
+        <div className="text-left md:text-center mb-12 md:mb-16">
+          <span className="font-sans text-sm md:text-md tracking-[0.3em] text-lab-gold uppercase">
             What We Do
           </span>
-          <h2 className="font-serif text-4xl md:text-5xl mt-4 text-lab-text">
+          <h2 className="font-serif text-4xl md:text-5xl mt-3 text-lab-text">
             OUR PRODUCTS
           </h2>
         </div>
@@ -103,7 +103,7 @@ const Products = () => {
                   </h3>
 
                   <p
-                    className="font-sans text-xs tracking-wide uppercase mt-2
+                    className="font-sans text-sm tracking-wide  mt-2
                      text-[#3E2F22]/60"
                   >
                     {item.sub}
@@ -117,7 +117,7 @@ const Products = () => {
                 </div>
                 <div
                   className="
-    ml-6
+    md:ml-6
     w-[300px] mt-3 md:mt-0 sm:w-[150px] md:w-[280px]
     flex-shrink-0
     transition-transform duration-300

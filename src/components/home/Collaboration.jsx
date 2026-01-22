@@ -40,21 +40,21 @@ const Collaboration = () => {
     <section
       id="Collaboration"
       ref={elementRef}
-      className="py-12 md:py-24 px-6 bg-lab-bg relative"
+      className="py-12 md:py-20 px-6 bg-lab-bg relative"
     >
       <div
         className={`max-w-6xl mx-auto transition-all duration-1000 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        <div className="text-center mb-12 md:mb-24">
-          <span className="font-sans text-xs tracking-[0.3em] text-[#BFA15F] uppercase">
+        <div className="text-left md:text-center mb-10 md:mb-24">
+          <span className="font-sans text-sm md:text-md tracking-[0.3em] text-[#BFA15F] uppercase">
             Our
           </span>
-          <h2 className="font-serif text-4xl md:text-5xl mt-4 text-[#3E2F22]">
+          <h2 className="font-serif text-4xl md:text-5xl mt-3 text-[#3E2F22]">
             COLLABORATIONS
           </h2>
-          <p className="font-sans  text-[#3E2F22]/80 leading-loose">
+          <p className="font-sans mt-1 text-[#3E2F22]/80 leading-loose">
             At Scoby Labs, collaboration is not a side initiative—it’s a
             strategic driver that shapes how we learn, create, and scale impact.
             Our partnerships allow us to bridge food, science, culture, and

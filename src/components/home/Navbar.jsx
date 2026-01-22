@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 w-full z-50 px-6 py-6 flex justify-between items-center bg-lab-bg/80 backdrop-blur-sm transition-all duration-300">
+      <nav className="fixed top-0 w-full z-50 px-6  flex justify-between items-center bg-lab-bg/80 backdrop-blur-sm transition-all duration-300">
         <a href="#" className="hover-trigger">
           <Image src="/logo.jpg" alt="SCOBY LABS" width={50} height={50} className="h-16 w-16 md:h-24 md:w-24 rounded-full border border-lab-text/10" />
         </a>

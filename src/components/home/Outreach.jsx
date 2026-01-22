@@ -18,7 +18,7 @@ const Outreach = () => {
         }`}
       >
         {/* Heading */}
-        <div className="text-center mb-10 space-y-6">
+        <div className="text-left md:text-center mb-6 space-y-6">
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#3E2F22]">
             OUTREACH AND ENGAGEMENT
           </h2>
@@ -28,11 +28,11 @@ const Outreach = () => {
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
           {/* Text Section */}
           <div className="w-full lg:w-1/2">
-            <span className="font-sans text-center md:text-left text-sm sm:text-md md:text-lg tracking-[0.3em] text-[#BFA15F] uppercase block">
+            <span className="font-sans text-left  text-sm sm:text-md md:text-lg tracking-[0.2em] text-[#BFA15F] uppercase block">
               THE KARAM KULTURE
             </span>
 
-            <p className="font-sans text-center md:text-left text-[#3E2F22]/80 mt-4 leading-loose text-sm sm:text-base">
+            <p className="font-sans text-left text-[#3E2F22]/80 mt-3 leading-loose text-sm sm:text-base">
               Karam Kulture is the kitchen born from Scoby Labs, where
               fermentation science meets the bold, expressive flavours of Indian
               cuisine. Here, ancient techniques like culturing, pickling,
@@ -48,7 +48,6 @@ const Outreach = () => {
             </p>
           </div>
 
-          {/* Image Section */}
           <div className="relative w-full lg:w-1/2 h-[260px] sm:h-[360px] md:h-[420px] rounded-xl overflow-hidden">
             <Image
               src="/20251127_173334.jpg"
