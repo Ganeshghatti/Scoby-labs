@@ -33,7 +33,7 @@ const Outreach = () => {
             </span>
 
             <p className="font-sans text-left text-[#3E2F22]/80 mt-3 leading-loose text-sm sm:text-base">
-              Karam Kulture is the kitchen born from Scoby Labs, where
+              The Karam Kulture is the kitchen born from Scoby Labs, where
               fermentation science meets the bold, expressive flavours of Indian
               cuisine. Here, ancient techniques like culturing, pickling,
               brewing, and souring are reimagined through the lens of modern food
