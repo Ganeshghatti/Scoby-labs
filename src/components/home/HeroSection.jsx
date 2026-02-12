@@ -11,34 +11,14 @@ const Hero = () => {
   }, []);
 
   return (
-    <header className="min-h-screen flex flex-col justify-center items-center relative px-4 py-20 text-[#3E2F22] overflow-hidden">
-    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-  
-  {/* OUTER ORBIT */}
-  <div className="orbital orbital-lg"></div>
-
-  {/* PARTICLES BETWEEN RINGS */}
-  <div className="particle-orbit">
-    {Array.from({ length: 20 }).map((_, i) => (
-      <span key={i}></span>
-    ))}
-  </div>
-
-  {/* INNER ORBIT */}
-  <div className="orbital orbital-md"></div>
-
-  {/* FLOATING MICROBES */}
-  <div className="microbes">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-
-  {/* CORE */}
-  <div className="energy-core"></div>
-</div>
-
+    <header className="min-h-screen flex flex-col justify-center items-center relative px-4 py-20 text-[#3E2F22] overflow-hidden bg-[#FAF7F2]">
+      
+      {/* PREMIUM LAB BACKGROUND */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div className="halo-bg"></div>
+        <div className="soft-grid"></div>
+        <div className="glow-core"></div>
+      </div>
 
       {/* SMALL TAG */}
       <p
@@ -48,7 +28,7 @@ const Hero = () => {
       </p>
 
       {/* BRAND NAME */}
-      <h1 className="font-serif text-4xl sm:text-6xl md:text-8xl text-center leading-none mb-6">
+      <h1 className="font-serif text-4xl sm:text-6xl md:text-8xl text-center leading-none mb-6 relative z-10">
         <span className={`brand-line ${loaded ? "show" : ""}`}>SCOBY</span>
         <span className={`brand-line italic delay ${loaded ? "show" : ""}`}>
           LABS

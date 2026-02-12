@@ -24,12 +24,12 @@ const Products = () => {
     {
       title: "KIMCHI",
       sub: "Kimchi is a traditional Korean fermented vegetable preparation, defined by process rather than a single recipe.At Scoby Labs, we craft a vegan kimchi  using seasonal vegetables, garlic, ginger, and spices.Natural lactic fermentation transforms the vegetables into a living, probiotic-rich food.This process enhances flavour while supporting digestion and nutrient absorption.Rooted in centuries-old preservation practices, kimchi reflects fermentation as both science and culture.A bold, evolving ferment shaped by time, microbes, and care. ",
-      tag: "/Screenshot 2026-01-13 145150.png",
+      tag: "/KIMCHI.png",
     },
     {
       title: "SAUERKRAUT ",
       sub: "Sauerkraut is a fermented cabbage preparation developed as a method of long-term preservation.Through natural lactic fermentation, cabbage transforms into a probiotic-rich, acidic ferment.This process enhances nutrient availability beyond that of raw cabbage.Sauerkraut contains beneficial bacteria that support gut health and digestion.Historically adopted across cultures, it reflects fermentation as both necessity and craft.A simple, structured ferment shaped by time, salt, and microbial activity. ",
-      tag: "/Screenshot 2026-01-13 181945.png",
+      tag: "/SAUERKRAUT.png",
     },
     {
       title: "BEET KVASS",
@@ -41,16 +41,16 @@ const Products = () => {
       sub: "Tepache is a lightly fermented beverage traditionally made from pineapple.It originated in pre-Columbian Mexico, where it was prepared as a household ferment rather than a standardized drink.Through short fermentation, pineapple develops gentle effervescence and a balanced sweet-tart profile.Tepache typically contains very low alcohol, similar to other natural ferments.Rooted in indigenous fermentation practices, it reflects adaptability and regional variation.A vibrant fruit ferment shaped by time, tradition, and microbial activity. ",
       tag: "/products/Screenshot 2026-01-13 111702.png",
     },
-    {
-      title: "HONEY SRIRACHA",
-      sub: "Honey Sriracha is a fermented chili sauce that balances natural sweetness with controlled heat.At Scoby Labs, it’s crafted using real honey, chili paste, and pineapple vinegar.Fermentation deepens flavour complexity while preserving the sauce’s natural character.Unpasteurised and ingredient-forward, it develops a layered sweet–spicy profile.Designed for versatility, it works as a dip, glaze, or cooking ingredient.Made in collaboration with The Bee Story, supporting ethical, locally sourced honey.",
-      tag: "/Screenshot 2026-01-13 145235.png",
-    },
-    {
-      title: "JAGGERY SRIRACHA",
-      sub: "Jaggery Sriracha is a fermented chili sauce that balances natural sweetness with controlled heat.Made using chili paste, jaggery, and pineapple vinegar, it develops depth through slow fermentation.This is our vegan take on sriracha, where jaggery replaces honey without compromising complexity.Unpasteurised and ingredient-led, it delivers a layered sweet–spicy profile with a subtle smoky note.Designed for versatility, it works as a condiment, glaze, or cooking ingredient.A contemporary ferment shaped by time, microbes, and plant-based craft. ",
-      tag: "/products/Screenshot 2026-01-13 111702.png",
-    },
+{
+  title: "SRIRACHA",
+  sub: `Our Sriracha is a naturally fermented chili sauce that balances heat with depth and acidity. Crafted with real chili paste and pineapple vinegar, it remains unpasteurised to preserve flavour and character.<br /><br />
+  Available in two variants:<br /><br />
+  <strong>Honey Sriracha</strong> — Made with ethically sourced honey for a smooth, floral sweetness that softens the heat while adding complexity.<br />
+  <strong>Jaggery Sriracha</strong> — Our vegan alternative, where jaggery contributes a rich, earthy depth with balanced sweetness.<br /><br />
+  One ferment, two expressions — both bold, versatile, and thoughtfully made.`,
+  tag: "/SRIRACHA.png",
+},
+
     {
       title: "CHILI OIL",
       sub: "Chili oil is an aromatic condiment made by infusing oils with dried chilies, spices, and alliums.The slow infusion process builds heat, aroma, and savoury depth without overpowering the palate.Our approach highlights clean ingredients and balanced extraction for a smooth, flavour-forward finish.Rich in umami and gentle spice, it elevates noodles, dumplings, salads, breads, and marinades.Designed for versatility, it functions as both seasoning and garnish.A pantry staple that brings warmth, texture, and character to everyday food. ",
@@ -105,9 +105,9 @@ const Products = () => {
                   <p
                     className="font-sans text-sm tracking-wide  mt-2
                      text-[#3E2F22]/60"
-                  >
-                    {item.sub}
-                  </p>
+                       dangerouslySetInnerHTML={{ __html: item.sub }}
+
+                  />
 
                   <a href="https://wa.me/c/919113574563" >
                   <button className="bg-[#BFA15F] p-2 mt-4 text-white rounded-md">

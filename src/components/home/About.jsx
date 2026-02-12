@@ -17,24 +17,18 @@ const About = () => {
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        <div className="order-2 md:order-1 relative">
-          <div className="aspect-square overflow-hidden bg-lab-accent relative group dish-card">
-            <Image
-              src="/IMG_20240204_232855_259.jpg"
-              alt="Microscope View"
-              width={200}
-              height={200}
-              className="object-cover w-full h-full dish-img opacity-90"
-            />
-            <div className="absolute inset-0 border border-lab-text/10 pointer-events-none z-10" />
-          </div>
-          {/* <div
-            className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 font-serif text-6xl md:text-8xl text-transparent opacity-10 pointer-events-none"
-            style={{ WebkitTextStroke: "1px #3E2F22" }}
-          >
-            01
-          </div> */}
-        </div>
+ <div className="order-2 md:order-1 relative">
+  <div className="relative w-full aspect-[4/5] md:aspect-square overflow-hidden bg-lab-accent group dish-card">
+    <Image
+      src="/ourstory.jpg"
+      alt="Microscope View"
+      fill
+      sizes="(max-width: 768px) 100vw, 50vw"
+      className="object-cover dish-img opacity-90"
+    />
+    <div className="absolute inset-0 border border-lab-text/10 pointer-events-none z-10" />
+  </div>
+</div>
 
         <div className="order-1 md:order-2 space-y-2 md:space-y-4 text-left text-lab-text">
           <h2 className="font-serif flex justify-start text-4xl md:text-6xl text-center md:text-left">
@@ -70,7 +64,7 @@ const About = () => {
             handcrafted beverage or joining us for a fermentation masterclass,
             you’re stepping into a lab that believes:
           </p>
-          <ul className="font-sans tracking-widest space-y-1 text-lab-text/70 mt-4">
+          <ul className="font-sans text-sm tracking-widest space-y-1 text-lab-text/70 mt-4">
             <li className="flex items-center space-x-4">
               <span className="w-1 h-1 bg-lab-gold rounded-full" />
               <span>Cooking is science </span>

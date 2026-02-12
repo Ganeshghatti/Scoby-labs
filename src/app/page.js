@@ -11,6 +11,7 @@ import { MolecularBackground } from '@/components/hooks/MolecularBg';
 import { CustomCursor } from '@/components/hooks/CustomCursor';
 import TeamSection from '@/components/home/Team';
 import Collaboration from '@/components/home/Collaboration';
+import Gallery from '@/components/home/Gallery';
 
 
 
@@ -27,6 +28,7 @@ export default function App() {
       <Collaboration/>
       <VisualInterlude/>
       <Classroom />
+      <Gallery/>
       <Outreach/>
       <Contact/>
       <Footer />

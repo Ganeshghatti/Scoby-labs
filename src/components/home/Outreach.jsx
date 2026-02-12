@@ -50,15 +50,13 @@ const Outreach = () => {
 
           <div className="relative w-full lg:w-1/2 h-[260px] sm:h-[360px] md:h-[420px] rounded-xl overflow-hidden">
             <Image
-              src="/20251127_173334.jpg"
+              src="/OUTREACH_AND_ENGEGMENT.png"
               alt="Karam Kulture"
               fill
               className="object-cover"
               priority
             />
 
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
           </div>
         </div>
       </div>
