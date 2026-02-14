@@ -17,7 +17,7 @@ export async function POST(req) {
     }
 
     const config = {
-      from: "ronakvarshney7100@gmail.com",
+      from: "scobylabsbangalore@gmail.com",
       to: email,
       subject: "Contact Mail",
       html: contactTemplate(name)
