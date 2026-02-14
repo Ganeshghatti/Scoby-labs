@@ -3,6 +3,7 @@ export const runtime = "nodejs";
 import { NextRequest, NextResponse } from "next/server";
 import { transporter } from "../../../../config/email";
 import { contactTemplate } from "../../../../services/emailTemplates/contact.template";
+import { adminContactNotificationTemplate } from "../../../../services/emailTemplates/admin-contact-notification.template";
 
 export async function POST(req) {
   try {
@@ -15,11 +16,21 @@ export async function POST(req) {
       );
     }
 
-    const config = {
-      from: { name: "Scoby Labs", address: "scobylabsbangalore@gmail.com" },
+    const ADMIN_EMAIL = "scobylabsbangalore@gmail.com";
+    const fromAddress = { name: "Scoby Labs", address: ADMIN_EMAIL };
+
+    const userEmail = {
+      from: fromAddress,
       to: email,
       subject: "Thank you for contacting us",
       html: contactTemplate(name),
+    };
+
+    const adminEmail = {
+      from: fromAddress,
+      to: ADMIN_EMAIL,
+      subject: `New contact form: ${name} (${email})`,
+      html: adminContactNotificationTemplate({ name, email, interest }),
     };
 
     try {
@@ -35,7 +46,10 @@ export async function POST(req) {
       );
     }
 
-    await transporter.sendMail(config);
+    await Promise.all([
+      transporter.sendMail(userEmail),
+      transporter.sendMail(adminEmail),
+    ]);
 
     return NextResponse.json(
       { message: "Email sent successfully" },
