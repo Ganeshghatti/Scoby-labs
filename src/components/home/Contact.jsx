@@ -24,23 +24,23 @@ const Contact = () => {
         headers: {
           "Content-Type": "application/json",
         },
-
         body: JSON.stringify(formdata),
       });
 
-      if(response.ok){
-        console.log(response);
-        toast.success("Contact Mail send Succsessfully..");
-        setformdata({
-          name : "",
-          email : "",
-          interest : ""
-        })
+      const data = await response.json().catch(() => ({}));
+
+      if (response.ok) {
+        toast.success("Message sent successfully. We'll get back to you soon.");
+        setformdata({ name: "", email: "", interest: "" });
+      } else {
+        toast.error(data?.message || "Something went wrong. Please try again.");
       }
     } catch (error) {
       console.error(error);
+      toast.error("Unable to send. Please check your connection and try again.");
+    } finally {
+      setloading(false);
     }
-    setloading(false);
   };
 
   return (
@@ -73,6 +73,7 @@ const Contact = () => {
                 type="text"
                 name="name"
                 id="name"
+                value={formdata.name}
                 onChange={(e) =>
                   setformdata({ ...formdata, [e.target.name]: e.target.value })
                 }
@@ -92,6 +93,7 @@ const Contact = () => {
                 type="text"
                 id="interest"
                 name="interest"
+                value={formdata.interest}
                 onChange={(e) =>
                   setformdata({ ...formdata, [e.target.name]: e.target.value })
                 }
@@ -112,6 +114,7 @@ const Contact = () => {
             <input
               type="email"
               name="email"
+              value={formdata.email}
               onChange={(e) =>
                 setformdata({ ...formdata, [e.target.name]: e.target.value })
               }
@@ -149,7 +152,29 @@ const Contact = () => {
           </div>
         </form>
       </div>
-      <Toaster/>
+      <Toaster
+        position="bottom-center"
+        gutter={24}
+        toastOptions={{
+          duration: 4000,
+          style: {
+            background: "#FDFBF7",
+            color: "#3E2F22",
+            border: "1px solid rgba(62, 47, 34, 0.12)",
+            borderRadius: "8px",
+            boxShadow: "0 4px 20px rgba(62, 47, 34, 0.12)",
+            padding: "14px 20px",
+            fontSize: "14px",
+            letterSpacing: "0.02em",
+          },
+          success: {
+            iconTheme: { primary: "#BFA15F", secondary: "#FDFBF7" },
+          },
+          error: {
+            iconTheme: { primary: "#B91C1C", secondary: "#FDFBF7" },
+          },
+        }}
+      />
     </section>
   );
 };
