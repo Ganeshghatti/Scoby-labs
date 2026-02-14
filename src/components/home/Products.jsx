@@ -24,7 +24,7 @@ const Products = () => {
     {
       title: "KIMCHI",
       sub: "Kimchi is a traditional Korean fermented vegetable preparation, defined by process rather than a single recipe.At Scoby Labs, we craft a vegan kimchi  using seasonal vegetables, garlic, ginger, and spices.Natural lactic fermentation transforms the vegetables into a living, probiotic-rich food.This process enhances flavour while supporting digestion and nutrient absorption.Rooted in centuries-old preservation practices, kimchi reflects fermentation as both science and culture.A bold, evolving ferment shaped by time, microbes, and care. ",
-      tag: "/kimchi.png",
+      tag: "/kimchi2.png",
     },
     {
       title: "SAUERKRAUT",
