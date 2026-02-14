@@ -29,6 +29,7 @@ const Contact = () => {
       });
 
       if(response.ok){
+        console.log(response);
         toast.success("Contact Mail send Succsessfully..");
         setformdata({
           name : "",
