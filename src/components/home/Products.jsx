@@ -9,12 +9,12 @@ const Products = () => {
     {
       title: "KOMBUCHA",
       sub: "Kombucha is a fermented tea traditionally rooted in East Asian cultures.It’s brewed using black or green tea, sugar, and a living SCOBY—a symbiotic culture of bacteria and yeast.Over days of fermentation, it naturally develops probiotics, organic acids, and gentle carbonation.This process supports gut health while creating complex, refreshing flavours.Rich in tea polyphenols and acetic acid, kombucha helps balance beneficial bacteria in the body. A functional beverage where science, fermentation, and flavour come together.",
-      tag: "/products/product1.jpeg",
+      tag: "/Kombucha.png",
     },
     {
       title: "WATER KEFIR",
       sub: "Water kefir is a fermented, non-dairy probiotic beverage produced using sugar water and kefir cultures.Through short fermentation, it develops natural carbonation and a mildly acidic profile.It contains diverse strains of beneficial bacteria and yeast formed during the fermentation process. Water kefir is traditionally valued for supporting gut and immune function. Being dairy-free and vegan, it fits a wide range of dietary preferences.A versatile ferment that highlights the simplicity and efficiency of microbial activity.",
-      tag: "/products/product2.jpg",
+      tag: "/water_kefir.png",
     },
     {
       title: "GINGER ALE",
@@ -24,12 +24,12 @@ const Products = () => {
     {
       title: "KIMCHI",
       sub: "Kimchi is a traditional Korean fermented vegetable preparation, defined by process rather than a single recipe.At Scoby Labs, we craft a vegan kimchi  using seasonal vegetables, garlic, ginger, and spices.Natural lactic fermentation transforms the vegetables into a living, probiotic-rich food.This process enhances flavour while supporting digestion and nutrient absorption.Rooted in centuries-old preservation practices, kimchi reflects fermentation as both science and culture.A bold, evolving ferment shaped by time, microbes, and care. ",
-      tag: "/KIMCHI.png",
+      tag: "/kimchi.png",
     },
     {
-      title: "SAUERKRAUT ",
+      title: "SAUERKRAUT",
       sub: "Sauerkraut is a fermented cabbage preparation developed as a method of long-term preservation.Through natural lactic fermentation, cabbage transforms into a probiotic-rich, acidic ferment.This process enhances nutrient availability beyond that of raw cabbage.Sauerkraut contains beneficial bacteria that support gut health and digestion.Historically adopted across cultures, it reflects fermentation as both necessity and craft.A simple, structured ferment shaped by time, salt, and microbial activity. ",
-      tag: "/SAUERKRAUT.png",
+      tag: "/sauerkarut.png",
     },
     {
       title: "BEET KVASS",
@@ -41,15 +41,15 @@ const Products = () => {
       sub: "Tepache is a lightly fermented beverage traditionally made from pineapple.It originated in pre-Columbian Mexico, where it was prepared as a household ferment rather than a standardized drink.Through short fermentation, pineapple develops gentle effervescence and a balanced sweet-tart profile.Tepache typically contains very low alcohol, similar to other natural ferments.Rooted in indigenous fermentation practices, it reflects adaptability and regional variation.A vibrant fruit ferment shaped by time, tradition, and microbial activity. ",
       tag: "/products/Screenshot 2026-01-13 111702.png",
     },
-{
-  title: "SRIRACHA",
-  sub: `Our Sriracha is a naturally fermented chili sauce that balances heat with depth and acidity. Crafted with real chili paste and pineapple vinegar, it remains unpasteurised to preserve flavour and character.<br /><br />
+    {
+      title: "SRIRACHA",
+      sub: `Our Sriracha is a naturally fermented chili sauce that balances heat with depth and acidity. Crafted with real chili paste and pineapple vinegar, it remains unpasteurised to preserve flavour and character.<br /><br />
   Available in two variants:<br /><br />
   <strong>Honey Sriracha</strong> — Made with ethically sourced honey for a smooth, floral sweetness that softens the heat while adding complexity.<br />
   <strong>Jaggery Sriracha</strong> — Our vegan alternative, where jaggery contributes a rich, earthy depth with balanced sweetness.<br /><br />
   One ferment, two expressions — both bold, versatile, and thoughtfully made.`,
-  tag: "/SRIRACHA.png",
-},
+      tag: "/sriacha.png",
+    },
 
     {
       title: "CHILI OIL",
@@ -105,13 +105,12 @@ const Products = () => {
                   <p
                     className="font-sans text-sm tracking-wide  mt-2
                      text-[#3E2F22]/60"
-                       dangerouslySetInnerHTML={{ __html: item.sub }}
-
+                    dangerouslySetInnerHTML={{ __html: item.sub }}
                   />
 
-                  <a href="https://wa.me/c/919113574563" >
-                  <button className="bg-[#BFA15F] p-2 mt-4 text-white rounded-md">
-                    Check details
+                  <a href="https://wa.me/c/919113574563">
+                    <button className="bg-[#BFA15F] p-2 mt-4 text-white rounded-md">
+                      Check details
                     </button>
                   </a>
                 </div>

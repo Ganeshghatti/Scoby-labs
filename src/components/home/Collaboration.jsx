@@ -20,7 +20,7 @@ const Collaboration = () => {
       icon: <BrainCircuit className="w-5 h-5" />,
       text: "Our partnership with The Bee Story aligns with our commitment to ingredient integrity and responsible sourcing. The Bee Story is a purpose-led brand dedicated to delivering premium, ethically sourced honey through sustainable beekeeping practices. Their work supports local beekeepers, protects pollinator habitats, and drives awareness around the ecological importance of bees. This collaboration powers our Honey Sriracha, where high-quality floral honey becomes a key functional ingredient—enhancing flavour, texture, and nutrition while grounding the product in ethical value chains. Together, we’re championing craft, sustainability, and community-led food ecosystems.",
       num: "01. INQUIRY",
-      image: "#",
+      image: "/bee_story_collaboration.png",
     },
   ];
 
@@ -35,7 +35,6 @@ const Collaboration = () => {
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        {/* Header */}
         <div className="text-left md:text-center mb-10 md:mb-24">
           <span className="font-sans text-sm md:text-md tracking-[0.3em] text-[#BFA15F] uppercase">
             Our
@@ -51,7 +50,6 @@ const Collaboration = () => {
           </p>
         </div>
 
-        {/* Timeline */}
         <div className="relative timeline-line">
           {steps.map((step, idx) => {
             const isEven = idx % 2 === 0;
@@ -61,7 +59,6 @@ const Collaboration = () => {
                 key={idx}
                 className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 mb-12 md:mb-24 items-center group"
               >
-                {/* TEXT BLOCK */}
                 <div
                   className={`${
                     isEven
@@ -99,18 +96,17 @@ const Collaboration = () => {
                       isEven ? "md:order-2" : "md:order-1"
                     }`}
                   >
-                    <div className="relative w-full  bg-lab-bg overflow-hidden">
+                    <div className="relative w-full  overflow-hidden">
                       <Image
                         src={step.image}
                         alt={step.title}
                         width={600}
                         height={500}
-                        className="object-cover h-3/2 w-3/2"
+                        className="object-cover h-1/2 w-3/2 object-center"
                       />
                     </div>
                   </div>
                 ) : (
-                  // Placeholder keeps grid alignment
                   <div
                     className={`${isEven ? "md:order-2" : "md:order-1"}`}
                   />
