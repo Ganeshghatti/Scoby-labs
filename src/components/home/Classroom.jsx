@@ -8,6 +8,10 @@ const Classroom = () => {
   const { elementRef, isVisible } = useIntersectionObserver({ threshold: 0.1 });
   const perks = [
     {
+      type: "image",
+      link: "/lab.png",
+    },
+    {
       type: "text",
       icon: <Microscope />,
       title: "Vision",
@@ -15,17 +19,14 @@ const Classroom = () => {
     },
     {
       type: "image",
-      link: "/IMG_20240522_021601_091.jpg",
+      link: "/IMG_20240824_231000_333.jpg",
     },
+
     {
       type: "text",
       icon: <ChefHat />,
       title: "Mission",
       desc: "To shape a business that serves everyone — uplifting communities now while safeguarding the world for tomorrow.",
-    },
-    {
-      type: "image",
-      link: "/IMG_20240824_231000_333.jpg",
     },
   ];
 
@@ -43,37 +44,39 @@ const Classroom = () => {
           </h2>
           <p className="font-sans text-[#FDFBF7]/70 text-left leading-loose mb-4 mt-2">
             Those who eat well can also feed well. I’ve always believed food
-            should be top-notch flavour matters. And flavours can be elevated
-            through culinary techniques backed by science, especially the kind
-            unlocked by fermentation. As an educator who loves chemistry and
-            biology, I’ve always felt at home in a kitchen. Cooking, aromas,
-            techniques all of it carried a sense of familiarity, and the
-            scientific curiosity I had as a child seemed to find its answers
-            there.{" "}
+            should be top-notch because flavour matters.These flavours can be
+            elevated through culinary techniques backed by science, especially
+            the kind unlocked by fermentation. As an educator who loves
+            chemistry and biology, I’ve always felt at home in a kitchen.
+            Cooking, Aromas, Techniques - all of it carried a sense of
+            familiarity, and the scientific curiosity I had as a child seemed to
+            find its answers there.
           </p>
           <p className="font-sans text-[#FDFBF7]/70 text-left leading-loose mb-2">
             As an educator, I wanted to pass on that same curiosity to my
-            students, and that is how Scoby Labs came to life to take this
+            students, and that is how Scoby Labs came to life - to take this
             intersection of food and science out into the world. We aspire to
             scale and compete with the best, but what will always set us apart
-            is what most brands overlook: customisation and inclusion. Everyone
-            is welcome because food doesn’t discriminate, and neither do we.
-            Food is our medium for inclusivity, which is why the first question
-            that we ask any customer is very simple that is{" "}
-            <span className="italic text-white ">
-              “What do you like?”
-            </span>
+            is what most brands overlook:{" "}
+            <span className="text-white italic">
+              customisation and inclusion.
+            </span>{" "}
+            Everyone is welcome because food doesn’t discriminate, and neither
+            do we. Food is our medium for inclusivity, which is why the first
+            question that we ask any customer is very simple that is
+            <span className="italic text-white ">“What do you like?”</span>
           </p>
 
           <p className="font-sans text-[#FDFBF7]/70 text-left leading-loose mb-6">
             Scoby Labs was born from inquisitiveness and research, and it will
             always stay rooted in inclusivity, transparency, and openness. Our
             doors will remain open to everyone, at all times. Our fundamental
-            pillars are clear{" "}
+            pillars are clear - science, research, inclusion, and a genuine love
+            for food.
             <span className="italic text-white">
               science, research, inclusion, and a genuine love for food.{" "}
             </span>
-            If food is culture, then fermentation is conversation and we’re
+            If food is culture, then fermentation is conversation - and we’re
             here to keep that conversation alive. Join us at the table.
           </p>
           <a
@@ -104,13 +107,13 @@ const Classroom = () => {
               )}
 
               {p.type === "image" && (
-                <div className="relative w-full aspect-[1] overflow-hidden rounded-md">
+                <div className="relative w-full aspect-[0.9] overflow-hidden rounded-md">
                   <Image
                     src={p.link}
                     alt="Scoby Labs"
                     fill
-                    className="object-cover hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 600px) 100vw, 50vw"
+                    className="object-cover object-[50%_31%] hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 600px) 100vw, 60vw"
                   />
                 </div>
               )}

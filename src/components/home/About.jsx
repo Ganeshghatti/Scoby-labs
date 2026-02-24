@@ -17,18 +17,18 @@ const About = () => {
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
- <div className="order-2 md:order-1 relative">
-  <div className="relative w-full aspect-[4/5] md:aspect-square overflow-hidden bg-lab-accent group dish-card">
-    <Image
-      src="/ourstory.jpg"
-      alt="Microscope View"
-      fill
-      sizes="(max-width: 768px) 100vw, 50vw"
-      className="object-cover dish-img opacity-90"
-    />
-    <div className="absolute inset-0 border border-lab-text/10 pointer-events-none z-10" />
-  </div>
-</div>
+        <div className="order-2 md:order-1 relative">
+          <div className="relative w-full aspect-[4/5] md:aspect-square overflow-hidden bg-lab-accent group dish-card">
+            <Image
+              src="/ourstory.jpg"
+              alt="Microscope View"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover dish-img opacity-90"
+            />
+            <div className="absolute inset-0 border border-lab-text/10 pointer-events-none z-10" />
+          </div>
+        </div>
 
         <div className="order-1 md:order-2 space-y-2 md:space-y-4 text-left text-lab-text">
           <h2 className="font-serif flex justify-start text-4xl md:text-6xl text-center md:text-left">
@@ -38,29 +38,32 @@ const About = () => {
 
           <div className="w-12 h-[1px] " />
           <p className="font-sans   text-[#3E2F22]/80 leading-loose">
+            <span className="italic text-black">Scoby Labs began in 2022 </span>{" "}
+            with a question that emerged during a time of loss and reflection:{" "}
             <span className="italic text-black">
-              Scoby Labs began in 2022{" "}
+              If tomorrow wasn’t promised, what dream deserved to be lived
+              today?
             </span>{" "}
-            with a very pertinent question that became impossible to ignore
-            after a time marked by loss and grief- If tomorrow wasn’t promised,
-            what dream deserved to be lived today? The answer was simple- cook,
-            create and feed people. What began as a small, cathartic experiment-
-            fruit jars set to a ferment for a 21-day “passion project” quickly
-            turned into a gathering. Friends tasted the early brews,
-            conversations sparked, and the name SCOBY emerged organically from
-            that circle of support. A spontaneous stall at a local market on 18
-            November 2022 turned into the real beginning. With unpolished
-            ferments and simple tasting sessions, the stall drew unexpected
-            crowds. People connected with the flavours, the story, and the
-            science. Orders came in, and the journey began. From delivering
-            bottles across the city to{" "}
+            The answer was simple- cook, create, and feed people. <br/> What started
+            as a 21 days passion project of fermenting fruit jars soon became a
+            gathering. Friends tasted the early brews, conversations grew, and
+            the name SCOBY emerged from that circle of support. A spontaneous
+            stall on 18 November 2022 marked the true beginning. With simple
+            tasting sessions and unpolished ferments, people connected with the
+            flavours, the story, and the science, and the journey began.<br/> From
+            delivering bottles across the city to developing over 19 flavours
+            and spending nine months refining kombucha through R&D, Scoby Labs
+            evolved into both a product and a learning space. A café partnership
+            followed, along with workshops and science-led experiences. Whether
+            you’re sipping a handcrafted beverage or joining a fermentation
+            masterclass, you’re stepping into a lab that believes:
             <span className="italic text-black">
               experimenting with over 19 flavours
             </span>
             , the work grew into a deep dive into fermentation, flavour
             chemistry, and nine months of kombucha R&D. A café opened space for
             our products, and soon, the project expanded into workshops and
-            science-based learning experiences. Whether you&apos;re sipping on a
+            science-based learning experiences. <br/> <br/> Whether you&apos;re sipping on a
             handcrafted beverage or joining us for a fermentation masterclass,
             you’re stepping into a lab that believes:
           </p>

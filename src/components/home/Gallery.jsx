@@ -3,13 +3,16 @@
 import { useState } from "react";
 import Image from "next/image";
 
-import image1 from "../../../public/IMG_20240204_232855_259.jpg";
-import image2 from "../../../public/NR_BIC_00303.jpg";
-import image7 from "../../../public/20250618_153833.jpg";
-import image3 from "../../../public/IMG_20240824_231000_333.jpg";
-import image4 from "../../../public/IMG_20240204_232855_346.jpg";
-import image5 from "../../../public/IMG-20240622-WA0004.jpg";
-import image6 from "../../../public/IMG-20250613-WA0022.jpg";
+import image1 from "../../../public/gallery1.jpg";
+import image2 from "../../../public/gallery2.jpg";
+import image7 from "../../../public/gallery4.jpg";
+import image3 from "../../../public/gallery3.jpg";
+import image4 from "../../../public/gallery6.jpg";
+import image5 from "../../../public/gallery5.jpg";
+import image6 from "../../../public/gallery7.jpg";
+import image8 from "../../../public/gallery8.jpg";
+import image9 from "../../../public/gallery9.jpg";
+
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -17,12 +20,16 @@ const Gallery = () => {
   const galleryImages = [
     { src: image1, alt: "img" },
     { src: image7, alt: "img" },
+        { src: image8, alt: "img" },
+
 
     { src: image2, alt: "img" },
     { src: image3, alt: "img" },
+
     { src: image4, alt: "img" },
     { src: image5, alt: "img" },
     { src: image6, alt: "img" },
+    {src : image9 , alt:"img"}
   ];
 
   return (

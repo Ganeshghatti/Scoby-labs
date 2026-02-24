@@ -10,17 +10,21 @@ const Collaboration = () => {
   const steps = [
     {
       title: "National Science Gallery — Fermentation Meets Public Education",
-      icon: <FlaskConical className="w-5 h-5" />,
       text: "Scoby Labs also partnered with the National Science Gallery, where our fermentation exhibit was showcased for a full year. This collaboration allowed us to demonstrate fermentation as a living interface between biology, chemistry, culture, and daily food systems. Through this exhibit, we engaged students, researchers, and the general public—opening up conversations on microbial ecosystems, food science, and experiential learning. The showcase reinforced our core thesis: science education becomes more memorable when it’s sensory, hands-on, and relevant to everyday life.",
       num: "02. INOCULATION",
       image: "/SCIENCE_GALLERY_COLLABORATION.png",
     },
     {
       title: "The Bee Story — Ethical Honey, Real Impact",
-      icon: <BrainCircuit className="w-5 h-5" />,
       text: "Our partnership with The Bee Story aligns with our commitment to ingredient integrity and responsible sourcing. The Bee Story is a purpose-led brand dedicated to delivering premium, ethically sourced honey through sustainable beekeeping practices. Their work supports local beekeepers, protects pollinator habitats, and drives awareness around the ecological importance of bees. This collaboration powers our Honey Sriracha, where high-quality floral honey becomes a key functional ingredient—enhancing flavour, texture, and nutrition while grounding the product in ethical value chains. Together, we’re championing craft, sustainability, and community-led food ecosystems.",
       num: "01. INQUIRY",
       image: "/bee_story_collaboration.png",
+    },
+    {
+      title: "Simplifry — Shared Spaces, Shared Energy",
+      text: "We collaborate with Simplifry, a vegan and sustainability-focused food company, by sharing stalls at curated events such as Namu Recommends — a vegan market. These shared spaces allow us to present our fermentation-led offerings alongside consciously crafted plant-based food, creating a cohesive and purpose-driven experience for visitors. Working alongside a brand rooted in veganism and sustainable practices expands our horizons in meaningful ways. It encourages us to explore plant-based innovations, rethink ingredient choices, and experiment more intentionally within the space of ethical and low-impact food systems. Through collaborations like these, we not only reach wider audiences but also deepen our understanding of sustainability, inclusivity, and responsible food production. By choosing collaboration over competition, we continue building a food ecosystem that is thoughtful, community-driven, and forward-looking.",
+      num: "",
+      image: "/simplify_collab.png",
     },
   ];
 
@@ -43,7 +47,7 @@ const Collaboration = () => {
             COLLABORATIONS
           </h2>
           <p className="font-sans mt-1 text-[#3E2F22]/80 leading-loose">
-            At Scoby Labs, collaboration is not a side initiative—it’s a
+            At Scoby Labs, collaboration is not a side initiative-it’s a
             strategic driver that shapes how we learn, create, and scale impact.
             Our partnerships allow us to bridge food, science, culture, and
             community in ways that are meaningful and future-facing.
@@ -88,14 +92,8 @@ const Collaboration = () => {
                   </div>
                 </div>
 
-                
-
                 {step.image && step.image !== "#" ? (
-                  <div
-                    className={`${
-                      isEven ? "md:order-2" : "md:order-1"
-                    }`}
-                  >
+                  <div className={`${isEven ? "md:order-2" : "md:order-1"}`}>
                     <div className="relative w-full  overflow-hidden">
                       <Image
                         src={step.image}
@@ -107,9 +105,7 @@ const Collaboration = () => {
                     </div>
                   </div>
                 ) : (
-                  <div
-                    className={`${isEven ? "md:order-2" : "md:order-1"}`}
-                  />
+                  <div className={`${isEven ? "md:order-2" : "md:order-1"}`} />
                 )}
               </div>
             );

@@ -2,13 +2,14 @@
 import Image from "next/image";
 import { useIntersectionObserver } from "../hooks/useIntersection";
 import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Products = () => {
   const { elementRef, isVisible } = useIntersectionObserver({ threshold: 0.1 });
   const items = [
     {
       title: "KOMBUCHA",
-      sub: "Kombucha is a fermented tea traditionally rooted in East Asian cultures.It’s brewed using black or green tea, sugar, and a living SCOBY—a symbiotic culture of bacteria and yeast.Over days of fermentation, it naturally develops probiotics, organic acids, and gentle carbonation.This process supports gut health while creating complex, refreshing flavours.Rich in tea polyphenols and acetic acid, kombucha helps balance beneficial bacteria in the body. A functional beverage where science, fermentation, and flavour come together.",
+      sub : "Naturally carbonated, artisanal, zero preservative Kombucha is an artisanal fermented tea traditionally rooted in East Asian cultures. At Scoby Labs, each batch is carefully brewed using black or green tea, sugar, and a living SCOBY—a symbiotic culture of bacteria and yeast. Through slow fermentation, our kombucha becomes naturally carbonated, developing gentle effervescence without artificial gas infusion. Over time, it forms probiotics and organic acids that support gut health while creating layered, refreshing flavours. Rich in tea polyphenols and acetic acid, our small-batch ferments reflect a process that is patient, intentional, and craft-led. A naturally carbonated, artisanal beverage where science, fermentation, and flavour come together.",
       tag: "/Kombucha.png",
     },
     {
@@ -19,7 +20,7 @@ const Products = () => {
     {
       title: "GINGER ALE",
       sub: "Ginger ale is a carbonated beverage traditionally flavoured with ginger, known for its sharp, refreshing profile.At Scoby Labs, it is produced through natural fermentation rather than artificial carbonation.This process allows the drink to develop gentle effervescence and deeper flavour complexity over time.Made using real ginger, it retains the plant’s naturally warming and digestive properties.Historically rooted in 19th-century Europe, ginger ale continues to evolve through craft fermentation.A clean, functional ferment that balances spice, acidity, and natural fizz. ",
-      tag: "/Screenshot 2026-01-13 144908.png",
+      tag: "/ginger_ale.jpeg",
     },
     {
       title: "KIMCHI",
@@ -36,11 +37,11 @@ const Products = () => {
       sub: "Beet kvass is a lacto-fermented beverage made using beets, water, and salt.The fermentation produces a tangy, earthy profile with a naturally vibrant colour.Rooted in Eastern European fermentation traditions, kvass evolved as a functional daily drink.Beet kvass develops beneficial bacteria through lactic fermentation.It is traditionally valued for supporting digestion and metabolic balance.A minimal ferment that highlights the functional depth of vegetables and time. ",
       tag: "/products/product3.jpg",
     },
-    {
-      title: "TEPACHE",
-      sub: "Tepache is a lightly fermented beverage traditionally made from pineapple.It originated in pre-Columbian Mexico, where it was prepared as a household ferment rather than a standardized drink.Through short fermentation, pineapple develops gentle effervescence and a balanced sweet-tart profile.Tepache typically contains very low alcohol, similar to other natural ferments.Rooted in indigenous fermentation practices, it reflects adaptability and regional variation.A vibrant fruit ferment shaped by time, tradition, and microbial activity. ",
-      tag: "/products/Screenshot 2026-01-13 111702.png",
-    },
+    // {
+    //   title: "TEPACHE",
+    //   sub: "Tepache is a lightly fermented beverage traditionally made from pineapple.It originated in pre-Columbian Mexico, where it was prepared as a household ferment rather than a standardized drink.Through short fermentation, pineapple develops gentle effervescence and a balanced sweet-tart profile.Tepache typically contains very low alcohol, similar to other natural ferments.Rooted in indigenous fermentation practices, it reflects adaptability and regional variation.A vibrant fruit ferment shaped by time, tradition, and microbial activity. ",
+    //   tag: "/products/Screenshot 2026-01-13 111702.png",
+    // },
     {
       title: "SRIRACHA",
       sub: `Our Sriracha is a naturally fermented chili sauce that balances heat with depth and acidity. Crafted with real chili paste and pineapple vinegar, it remains unpasteurised to preserve flavour and character.<br /><br />
@@ -51,11 +52,11 @@ const Products = () => {
       tag: "/sriacha.png",
     },
 
-    {
-      title: "CHILI OIL",
-      sub: "Chili oil is an aromatic condiment made by infusing oils with dried chilies, spices, and alliums.The slow infusion process builds heat, aroma, and savoury depth without overpowering the palate.Our approach highlights clean ingredients and balanced extraction for a smooth, flavour-forward finish.Rich in umami and gentle spice, it elevates noodles, dumplings, salads, breads, and marinades.Designed for versatility, it functions as both seasoning and garnish.A pantry staple that brings warmth, texture, and character to everyday food. ",
-      tag: "/products/Screenshot 2026-01-13 111702.png",
-    },
+    // {
+    //   title: "CHILI OIL",
+    //   sub: "Chili oil is an aromatic condiment made by infusing oils with dried chilies, spices, and alliums.The slow infusion process builds heat, aroma, and savoury depth without overpowering the palate.Our approach highlights clean ingredients and balanced extraction for a smooth, flavour-forward finish.Rich in umami and gentle spice, it elevates noodles, dumplings, salads, breads, and marinades.Designed for versatility, it functions as both seasoning and garnish.A pantry staple that brings warmth, texture, and character to everyday food. ",
+    //   tag: "/products/Screenshot 2026-01-13 111702.png",
+    // },
   ];
 
   return (
@@ -108,9 +109,9 @@ const Products = () => {
                     dangerouslySetInnerHTML={{ __html: item.sub }}
                   />
 
-                  <a href="https://wa.me/c/919113574563">
-                    <button className="bg-[#BFA15F] p-2 mt-4 text-white rounded-md">
-                      Check details
+                  <a href="https://wa.me/c/919113574563" className="">
+                    <button className="bg-[#BFA15F] p-2 mt-4 text-white rounded-md flex gap-1 items-center justify-center">
+                      Order here <FaWhatsapp size={20}/>
                     </button>
                   </a>
                 </div>
