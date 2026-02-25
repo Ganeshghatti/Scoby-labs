@@ -9,7 +9,7 @@ const Products = () => {
   const items = [
     {
       title: "KOMBUCHA",
-      sub : "Naturally carbonated, artisanal, zero preservative Kombucha is an artisanal fermented tea traditionally rooted in East Asian cultures. At Scoby Labs, each batch is carefully brewed using black or green tea, sugar, and a living SCOBY—a symbiotic culture of bacteria and yeast. Through slow fermentation, our kombucha becomes naturally carbonated, developing gentle effervescence without artificial gas infusion. Over time, it forms probiotics and organic acids that support gut health while creating layered, refreshing flavours. Rich in tea polyphenols and acetic acid, our small-batch ferments reflect a process that is patient, intentional, and craft-led. A naturally carbonated, artisanal beverage where science, fermentation, and flavour come together.",
+      sub: "Naturally carbonated, artisanal, zero preservative Kombucha is an artisanal fermented tea traditionally rooted in East Asian cultures. At Scoby Labs, each batch is carefully brewed using black or green tea, sugar, and a living SCOBY—a symbiotic culture of bacteria and yeast. Through slow fermentation, our kombucha becomes naturally carbonated, developing gentle effervescence without artificial gas infusion. Over time, it forms probiotics and organic acids that support gut health while creating layered, refreshing flavours. Rich in tea polyphenols and acetic acid, our small-batch ferments reflect a process that is patient, intentional, and craft-led. A naturally carbonated, artisanal beverage where science, fermentation, and flavour come together.",
       tag: "/Kombucha.png",
     },
     {
@@ -105,13 +105,13 @@ const Products = () => {
 
                   <p
                     className="font-sans text-sm tracking-wide  mt-2
-                     text-[#3E2F22]/60"
+                     text-[#3E2F22]/60 text-justify"
                     dangerouslySetInnerHTML={{ __html: item.sub }}
                   />
 
                   <a href="https://wa.me/c/919113574563" className="">
                     <button className="bg-[#BFA15F] p-2 mt-4 text-white rounded-md flex gap-1 items-center justify-center">
-                      Order here <FaWhatsapp size={20}/>
+                      Order here <FaWhatsapp size={20} />
                     </button>
                   </a>
                 </div>

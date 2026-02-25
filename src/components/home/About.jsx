@@ -37,7 +37,7 @@ const About = () => {
           </h2>
 
           <div className="w-12 h-[1px] " />
-          <p className="font-sans   text-[#3E2F22]/80 leading-loose">
+          <p className="font-sans   text-[#3E2F22]/80 leading-loose text-justify">
             <span className="italic text-black">Scoby Labs began in 2022 </span>{" "}
             with a question that emerged during a time of loss and reflection:{" "}
             <span className="italic text-black">

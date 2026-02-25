@@ -42,7 +42,7 @@ const Classroom = () => {
           <h2 className="font-sans text-left  text-xl md:text-3xl   tracking-[0.2em] text-lab-gold uppercase">
             FOUNDER’S MESSAGE{" "}
           </h2>
-          <p className="font-sans text-[#FDFBF7]/70 text-left leading-loose mb-4 mt-2">
+          <p className="font-sans text-[#FDFBF7]/70 text-justify leading-loose mb-4 mt-2">
             Those who eat well can also feed well. I’ve always believed food
             should be top-notch because flavour matters.These flavours can be
             elevated through culinary techniques backed by science, especially
@@ -52,13 +52,13 @@ const Classroom = () => {
             familiarity, and the scientific curiosity I had as a child seemed to
             find its answers there.
           </p>
-          <p className="font-sans text-[#FDFBF7]/70 text-left leading-loose mb-2">
+          <p className="font-sans text-[#FDFBF7]/70 leading-loose text-justify mb-2">
             As an educator, I wanted to pass on that same curiosity to my
             students, and that is how Scoby Labs came to life - to take this
             intersection of food and science out into the world. We aspire to
             scale and compete with the best, but what will always set us apart
             is what most brands overlook:{" "}
-            <span className="text-white italic">
+            <span className="text-white italic text-justify">
               customisation and inclusion.
             </span>{" "}
             Everyone is welcome because food doesn’t discriminate, and neither
@@ -67,7 +67,7 @@ const Classroom = () => {
             <span className="italic text-white ">“What do you like?”</span>
           </p>
 
-          <p className="font-sans text-[#FDFBF7]/70 text-left leading-loose mb-6">
+          <p className="font-sans text-[#FDFBF7]/70 leading-loose text-justify mb-2">
             Scoby Labs was born from inquisitiveness and research, and it will
             always stay rooted in inclusivity, transparency, and openness. Our
             doors will remain open to everyone, at all times. Our fundamental
@@ -79,6 +79,7 @@ const Classroom = () => {
             If food is culture, then fermentation is conversation - and we’re
             here to keep that conversation alive. Join us at the table.
           </p>
+          <p className="text-right text-white mb-5 md:mb-4"> -Supratim Bhattacharya</p>
           <a
             href="#contact"
             className="inline-block border-b border-lab-gold pb-1 text-lab-gold hover:text-white transition-colors tracking-widest text-xs uppercase hover-trigger"
@@ -90,7 +91,7 @@ const Classroom = () => {
           {perks.map((p, idx) => (
             <div
               key={idx}
-              className={`relative bg-[#FDFBF7]/5 p-6 md:p-8 backdrop-blur-sm border border-white/5 
+              className={`relative bg-[#FDFBF7]/5 p-3 md:p-5 backdrop-blur-sm border border-white/5 
       hover:border-lab-gold/30 transition-all duration-300
       ${idx % 2 !== 0 ? "sm:mt-8" : ""}`}
             >
