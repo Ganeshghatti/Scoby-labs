@@ -13,15 +13,13 @@ import image6 from "../../../public/gallery7.jpg";
 import image8 from "../../../public/gallery8.jpg";
 import image9 from "../../../public/gallery9.jpg";
 
-
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const galleryImages = [
     { src: image1, alt: "img" },
     { src: image7, alt: "img" },
-        { src: image8, alt: "img" },
-
+    { src: image8, alt: "img" },
 
     { src: image2, alt: "img" },
     { src: image3, alt: "img" },
@@ -29,7 +27,7 @@ const Gallery = () => {
     { src: image4, alt: "img" },
     { src: image5, alt: "img" },
     { src: image6, alt: "img" },
-    {src : image9 , alt:"img"}
+    { src: image9, alt: "img" },
   ];
 
   return (
@@ -41,7 +39,7 @@ const Gallery = () => {
       </div>
 
       <div className="mt-12">
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
           {galleryImages.map((image, index) => (
             <div
               key={index}

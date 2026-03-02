@@ -71,9 +71,7 @@ const Products = () => {
         }`}
       >
         <div className="text-left md:text-center mb-12 md:mb-16">
-          <span className="font-sans text-sm md:text-md tracking-[0.3em] text-lab-gold uppercase">
-            What We Do
-          </span>
+   
           <h2 className="font-serif text-4xl md:text-5xl mt-3 text-lab-text">
             OUR PRODUCTS
           </h2>

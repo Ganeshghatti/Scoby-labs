@@ -37,10 +37,8 @@ const TeamSection = () => {
         className={`max-w-7xl mx-auto relative z-10 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
       >
         <div className="text-left md:text-center mb-12 md:mb-20">
-          <span className="font-sans text-sm md:text-md tracking-[0.3em] text-lab-gold uppercase">
-            Specimen Collection
-          </span>
-          <h2 className="font-serif text-4xl md:text-5xl mt-5 md:mt-4 text-lab-text">
+ 
+          <h2 className="font-serif text-4xl md:text-5xl mt-5 md:mt-4 mb-2 text-lab-text">
             THE TEAM
           </h2>
 
@@ -58,19 +56,18 @@ const TeamSection = () => {
           </p>
         </div>
 
-<div className="flex mt-5 md:px-10 py-6 w-full" id="gallery">
-  <div className="relative w-full aspect-[4/3] md:aspect-[16/9] overflow-hidden shadow-md rounded-xl">
-    <Image
-      src={image1}
-      alt="Social Hardware robotics lab workspace"
-      fill
-      sizes="(max-width: 768px) 100vw, 90vw"
-      className="object-cover"
-      priority
-    />
-  </div>
-</div>
-
+        <div className="flex mt-5 md:px-10 py-6 w-full" id="gallery">
+          <div className="relative w-full aspect-[4/3] md:aspect-[16/9] overflow-hidden shadow-md rounded-xl">
+            <Image
+              src={image1}
+              alt="Social Hardware robotics lab workspace"
+              fill
+              sizes="(max-width: 768px) 100vw, 90vw"
+              className="object-cover"
+              priority
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

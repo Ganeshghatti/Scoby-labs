@@ -9,7 +9,7 @@ const Classroom = () => {
   const perks = [
     {
       type: "image",
-      link: "/lab.png",
+      link: "/IMG_20240522_021601_091.jpg",
     },
     {
       type: "text",
@@ -19,14 +19,14 @@ const Classroom = () => {
     },
     {
       type: "image",
-      link: "/IMG_20240824_231000_333.jpg",
+      link: "/lab.png",
     },
 
     {
       type: "text",
       icon: <ChefHat />,
       title: "Mission",
-      desc: "To shape a business that serves everyone — uplifting communities now while safeguarding the world for tomorrow.",
+      desc: "To shape a business that serves everyone - uplifting communities now while safeguarding the world for tomorrow.",
     },
   ];
 
@@ -79,7 +79,9 @@ const Classroom = () => {
             If food is culture, then fermentation is conversation - and we’re
             here to keep that conversation alive. Join us at the table.
           </p>
-          <p className="text-right text-white mb-5 md:mb-4"> -Supratim Bhattacharya</p>
+          <p className="font-sans text-right italic text-[#FDFBF7]/70 mb-5 md:mb-4">
+            -Supratim Bhattacharya
+          </p>
           <a
             href="#contact"
             className="inline-block border-b border-lab-gold pb-1 text-lab-gold hover:text-white transition-colors tracking-widest text-xs uppercase hover-trigger"
