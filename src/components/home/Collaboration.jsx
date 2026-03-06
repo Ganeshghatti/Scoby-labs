@@ -12,7 +12,7 @@ const Collaboration = () => {
       title: "National Science Gallery — Fermentation Meets Public Education",
       text: "Scoby Labs also partnered with the National Science Gallery, where our fermentation exhibit was showcased for a full year. This collaboration allowed us to demonstrate fermentation as a living interface between biology, chemistry, culture, and daily food systems. Through this exhibit, we engaged students, researchers, and the general public-opening up conversations on microbial ecosystems, food science, and experiential learning. The showcase reinforced our core thesis: science education becomes more memorable when it’s sensory, hands-on, and relevant to everyday life.",
       image: "/SCIENCE_GALLERY_COLLABORATION.png",
-      link : "https://www.nationalgallery.ie"
+      link : "https://bengaluru.sciencegallery.com/"
     },
     {
       title: "The Bee Story — Ethical Honey, Real Impact",

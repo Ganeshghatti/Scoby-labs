@@ -79,7 +79,7 @@ const Classroom = () => {
             If food is culture, then fermentation is conversation - and we’re
             here to keep that conversation alive. Join us at the table.
           </p>
-          <p className="font-sans text-right italic text-[#FDFBF7]/70 mb-5 md:mb-4">
+          <p className="font-sans text-right  text-[#FDFBF7]/70 mb-5 md:mb-4">
             -Supratim Bhattacharya
           </p>
           <a
