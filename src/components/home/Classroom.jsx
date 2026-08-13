@@ -73,9 +73,6 @@ const Classroom = () => {
             doors will remain open to everyone, at all times. Our fundamental
             pillars are clear - science, research, inclusion, and a genuine love
             for food.
-            <span className="italic text-white">
-              science, research, inclusion, and a genuine love for food.{" "}
-            </span>
             If food is culture, then fermentation is conversation - and we’re
             here to keep that conversation alive. Join us at the table.
           </p>
